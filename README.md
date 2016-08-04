@@ -4,7 +4,7 @@ A widget partner can opt into our pixel program which will allow us to track con
 
 To implement this feature, a partner needs to add the following code you the landing page they want to track:
 
-1. Place this code in the `<head>` tag
+### Place this code in the `<head>` tag
 
 ```javascript
 <script>
@@ -19,7 +19,7 @@ To implement this feature, a partner needs to add the following code you the lan
 </script>
 ```
 
-2. Then somewhere in the `<body>` of the page...
+### Then somewhere in the `<body>` of the page...
 
 ```javascript
 <script>
