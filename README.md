@@ -21,14 +21,23 @@ To implement this feature, a partner needs to add the following code you the lan
 
 ### Then somewhere in the `<body>` of the page...
 
+#### Track a visit
+
 ```javascript
 <script>
 // Track that the user simply visited the page
-// Replace '[PARTNER CODE]' with the actual partner code. You can get that from the dev team.
-fsbop('[PARTNER CODE]', 'landed');
- 
+fsbop('[PARTNER CODE]', 'visited');
+</script>
+```
+
+#### Track a conversion
+
+```javascript
+<script>
 // To track conversions, you need to trigger this code when your users convert.
 // For instance, when a user hits a submit button on a form, you can call this code.
 fsbop('[PARTNER CODE]', 'form-submitted');
 </script>
 ```
+
+Note, you need to replace `[PARTNER CODE]` with the actual partner code that was provided to you.
