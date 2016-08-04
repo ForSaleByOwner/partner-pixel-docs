@@ -4,10 +4,10 @@ A widget partner can opt into our pixel program which will allow us to track con
 
 To implement this feature, a partner needs to add the following code you the landing page they want to track:
 
+1. Place this code in the `<head>` tag
+
 ```javascript
 <script>
- 
-// place this code in the <head> tag
 (function(p,i,x,e,l,s) {
   p[x] = function() {
     e = [].splice.call(arguments,0);
@@ -16,9 +16,13 @@ To implement this feature, a partner needs to add the following code you the lan
     s=i.getElementsByTagName('body')[0]; s.appendChild(l);s.removeChild(l);
   }
 })(window, document, 'fsbop');
- 
-// Then somewhere in the <body> of the page...
- 
+</script>
+```
+
+2. Then somewhere in the `<body>` of the page...
+
+```javascript
+<script>
 // Track that the user simply visited the page
 // Replace '[PARTNER CODE]' with the actual partner code. You can get that from the dev team.
 fsbop('[PARTNER CODE]', 'landed');
@@ -26,6 +30,5 @@ fsbop('[PARTNER CODE]', 'landed');
 // Work with the partner to add other events that make sense. The name of the event can be whatever makes sense to you.
 // Example, track when the user submits the form on a landing page
 fsbop('[PARTNER CODE]', 'form-submitted');
- 
 </script>
 ```
