@@ -27,8 +27,8 @@ To implement this feature, a partner needs to add the following code you the lan
 // Replace '[PARTNER CODE]' with the actual partner code. You can get that from the dev team.
 fsbop('[PARTNER CODE]', 'landed');
  
-// Work with the partner to add other events that make sense. The name of the event can be whatever makes sense to you.
-// Example, track when the user submits the form on a landing page
+// To track conversions, you need to trigger this code when your users convert. For instance, when a user hits a submit button
+// on a form, you can call this code.
 fsbop('[PARTNER CODE]', 'form-submitted');
 </script>
 ```
