@@ -59,7 +59,7 @@ You may integrate with your GTM instance by adding the following code as a tag:
   p[x] = function() {
     e = [].splice.call(arguments,0);
     l=i.createElement('script');
-    l.src='//widget.stage.forsalebyowner.com/api/pp/'+e[0]+'?e='+e[1]+'&'+e.slice(2).join('&')+'&'+p.location.search.substr(1);
+    l.src='//widget-log.forsalebyowner.com/api/pp/'+e[0]+'?e='+e[1]+'&'+e.slice(2).join('&')+'&'+p.location.search.substr(1);
     s=i.getElementsByTagName('body')[0]; s.appendChild(l);s.removeChild(l);
   }
 })(window, document, 'fsbop');
