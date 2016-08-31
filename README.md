@@ -49,7 +49,9 @@ Note, you need to replace `[PARTNER CODE]` with the actual partner code that was
 
 ## Google Tag Manager Integration
 
-You may integrate with your GTM instance by adding the following code as a tag **NOT COMPLETE**:
+**THIS SECTION IS NOT YET COMPLETE**
+
+You may integrate with your GTM instance by adding the following code as a tag:
 
 ```javascript
 <script>
