@@ -1,8 +1,12 @@
 # Partner Pixel Documentation
-
+ 
+ * [Manual Integration](#ManuelIntegration) 
+ 
 A widget partner can opt into our pixel program which will allow us to track conversions. The partner adds a snippet of code to the affected landing page and from that pixel we will collect details about that user through one or more events. At least a visited event is tracked but we may work with the partner to include additional event tracking that makes sense to the business reporting.
 
 To implement this feature, a partner needs to add the following code you the landing page they want to track:
+
+## Manual Integration
 
 ### Place this code in the `<head>` tag
 
