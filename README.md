@@ -15,10 +15,7 @@ To implement this feature, a partner needs to add the following code you the lan
 <script>
 (function(p,i,x,e,l,s) {
   p[x] = function() {
-    e = [].splice.call(arguments,0);
-    l=i.createElement('script');
-    l.src='//widget-log.forsalebyowner.com/api/pp/'+e[0]+'?e='+e[1]+'&'+e.slice(2).join('&')+'&'+p.location.search.substr(1);
-    s=i.getElementsByTagName('body')[0]; s.appendChild(l);s.removeChild(l);
+    e = [].splice.call(arguments,0);l=i.createElement('script');l.async=true;l.src='//widget-log.forsalebyowner.com/api/pp/'+e[0]+'?e='+e[1]+'&'+e.slice(2).join('&')+'&'+p.location.search.substr(1);s=i.getElementsByTagName('body')[0]; s.appendChild(l);s.removeChild(l);
   }
 })(window, document, 'fsbop');
 </script>
@@ -57,10 +54,7 @@ You may integrate with your GTM instance by adding the following code as a tag:
 <script>
 (function(p,i,x,e,l,s) {
   p[x] = function() {
-    e = [].splice.call(arguments,0);
-    l=i.createElement('script');
-    l.src='//widget-log.forsalebyowner.com/api/pp/'+e[0]+'?e='+e[1]+'&'+e.slice(2).join('&')+'&'+p.location.search.substr(1);
-    s=i.getElementsByTagName('body')[0]; s.appendChild(l);s.removeChild(l);
+    e = [].splice.call(arguments,0);l=i.createElement('script');l.async=true;l.src='//widget-log.forsalebyowner.com/api/pp/'+e[0]+'?e='+e[1]+'&'+e.slice(2).join('&')+'&'+p.location.search.substr(1);s=i.getElementsByTagName('body')[0]; s.appendChild(l);s.removeChild(l);
   }
 })(window, document, 'fsbop');
 </script>
