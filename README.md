@@ -1,6 +1,7 @@
 # Partner Pixel Documentation
  
- * [Manual Integration](#ManuelIntegration) 
+ * [Manual Integration](#manual-integration) 
+ * [Google Tag Manager Integration](#manual-integration) 
  
 A widget partner can opt into our pixel program which will allow us to track conversions. The partner adds a snippet of code to the affected landing page and from that pixel we will collect details about that user through one or more events. At least a visited event is tracked but we may work with the partner to include additional event tracking that makes sense to the business reporting.
 
@@ -45,3 +46,26 @@ fsbop('[PARTNER CODE]', 'form-submitted');
 ```
 
 Note, you need to replace `[PARTNER CODE]` with the actual partner code that was provided to you.
+
+## Google Tag Manager Integration
+
+You may integrate with your GTM instance by adding the following code as a tag **NOT COMPLETE**:
+
+```javascript
+<script>
+(function(p,i,x,e,l,s) {
+  p[x] = function() {
+    e = [].splice.call(arguments,0);
+    l=i.createElement('script');
+    l.src='//widget.stage.forsalebyowner.com/api/pp/'+e[0]+'?e='+e[1]+'&'+e.slice(2).join('&')+'&'+p.location.search.substr(1);
+    s=i.getElementsByTagName('body')[0]; s.appendChild(l);s.removeChild(l);
+  }
+})(window, document, 'fsbop');
+</script>
+
+<script>
+// Track that the user simply visited the page
+fsbop('[PARTNER CODE]','vistied','url='+encodeURIComponent({{Page URL}}),'referrer='+encodeURIComponent({{Referrer}})
+);
+</script>
+```
