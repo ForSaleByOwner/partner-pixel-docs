@@ -46,7 +46,7 @@ Note, you need to replace `[PARTNER CODE]` with the actual partner code that was
 
 ## Google Tag Manager Integration
 
-You may integrate with your GTM instance by adding the following code as a tag:
+Create a ‘Custom HTML’ tag and insert the follow- ing script inside the tag. Make sure to check the box marked (Support document.write) and make sure the trigger is set to ‘All Pages’.
 
 ```javascript
 <script>
