@@ -42,7 +42,8 @@ fsbop('[PARTNER CODE]', 'form-submitted');
 </script>
 ```
 
-Note, you need to replace `[PARTNER CODE]` with the actual partner code that was provided to you.
+**Note, you need to replace `[PARTNER CODE]` with the actual partner code that was provided to you.
+Example: `fsbop('ABCD1234', 'form-submitted');`**
 
 ## Google Tag Manager Integration
 
@@ -63,3 +64,6 @@ fsbop('[PARTNER CODE]','vistied','url='+encodeURIComponent({{Page URL}}),'referr
 );
 </script>
 ```
+
+**Note, you need to replace `[PARTNER CODE]` with the actual partner code that was provided to you.
+Example: `fsbop('ABCD1234', 'form-submitted');`**
