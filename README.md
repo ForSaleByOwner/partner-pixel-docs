@@ -60,7 +60,7 @@ Create a ‘Custom HTML’ tag and insert the following script inside the tag. M
 
 <script>
 // Track that the user simply visited the page
-fsbop('[PARTNER CODE]','vistied','url='+encodeURIComponent({{Page URL}}),'referrer='+encodeURIComponent({{Referrer}})
+fsbop('[PARTNER CODE]','visited','url='+encodeURIComponent({{Page URL}}),'referrer='+encodeURIComponent({{Referrer}})
 );
 </script>
 ```
